@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp">
+
+    <EditText
+        android:id="@+id/insertID"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="2"
+        android:background="@android:color/holo_orange_light"
+        android:backgroundTint="#99FFDC78"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="응모인"
+        android:textColor="#4D000000" />
+
+    <EditText
+        android:id="@+id/insertnum"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_orange_light"
+        android:backgroundTint="#99FFDC78"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="수량"
+        android:textColor="#4D000000"
+        android:textSize="18sp" />
+
+</LinearLayout>
