@@ -69,12 +69,12 @@ class show : AppCompatActivity() {
 
 
         datas.apply {
-            add(ProfileAdapter2.ProfileData2(name = "@suksuk0406", nums_of_ID = arrayListOf(1,2,3,4,5)))
-            add(ProfileAdapter2.ProfileData2(name = "@doing.object", nums_of_ID =arrayListOf(6,7,8,9,10,11)))
-            add(ProfileAdapter2.ProfileData2(name = "@kkamsoon", nums_of_ID =arrayListOf(11,12)))
-            add(ProfileAdapter2.ProfileData2(name = "@sejong", nums_of_ID =arrayListOf(13,14)))
-            add(ProfileAdapter2.ProfileData2(name = "@alom", nums_of_ID =arrayListOf(15,16,17)))
-            add(ProfileAdapter2.ProfileData2(name = "@android", nums_of_ID =arrayListOf(18,19,20,21,22,23)))
+            add(ProfileAdapter2.ProfileData2(name = "@suksuk0406", nums_of_ID = arrayOf(1,2,3,4,5)))
+            add(ProfileAdapter2.ProfileData2(name = "@doing.object", nums_of_ID =arrayOf(6,7,8,9,10,11)))
+            add(ProfileAdapter2.ProfileData2(name = "@kkamsoon", nums_of_ID =arrayOf(11,12)))
+            add(ProfileAdapter2.ProfileData2(name = "@sejong", nums_of_ID =arrayOf(13,14)))
+            add(ProfileAdapter2.ProfileData2(name = "@alom", nums_of_ID =arrayOf(15,16,17)))
+            add(ProfileAdapter2.ProfileData2(name = "@android", nums_of_ID =arrayOf(18,19,20,21,22,23)))
 
             profileAdapter.datas = datas
             profileAdapter.notifyDataSetChanged()
