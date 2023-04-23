@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <include
-        layout="@layout/appbar"
-        />
+        android:id="@+id/include2"
+        layout="@layout/appbar" />
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -133,10 +134,10 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/prevbtn"
+            android:id="@+id/plusID"
             android:layout_width="24dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="140dp"
+            android:layout_marginLeft="0dp"
             android:layout_weight="1"
             android:background="#FFDC78"
             android:backgroundTint="#FFDC78"

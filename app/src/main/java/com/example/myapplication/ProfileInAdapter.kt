@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ProfileAdapter(private val context: Context) : RecyclerView.Adapter<ProfileAdapter.ViewHolder>() {
+class ProfileInAdapter(private val context: Context) : RecyclerView.Adapter<ProfileInAdapter.ViewHolder>() {
 
     var datas = mutableListOf<ProfileData>()
 
