@@ -13,6 +13,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -21,7 +22,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -80,27 +81,35 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:listitem="@layout/result_person" />
 
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:buttonTint="#FFDC78"
+            android:gravity="center"
+            android:text="녹화 시작" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="0dp"
+        android:layout_width="379dp"
         android:layout_height="68dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/prevbtn"
             android:layout_width="24dp"
             android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
             android:layout_weight="1"
             android:background="#FFDC78"
             android:backgroundTint="#FFDC78"
@@ -118,21 +127,7 @@
             android:background="#FFDC78"
             android:backgroundTint="#FFDC78"
             android:text="결과 발표"
-            android:textSize="18dp" />
+            android:textSize="18sp" />
     </LinearLayout>
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="184dp"
-        android:layout_height="50dp"
-        android:buttonTint="#FFDC78"
-        android:gravity="center"
-        android:text="녹화 시작"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.476" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
