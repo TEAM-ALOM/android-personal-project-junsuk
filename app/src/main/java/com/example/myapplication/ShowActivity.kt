@@ -2,6 +2,8 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.adapter.Entry
+import com.example.myapplication.adapter.Entryview
 import com.example.myapplication.databinding.ActivityShowBinding
 
 class ShowActivity : AppCompatActivity() {
@@ -22,23 +24,21 @@ class ShowActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-    lateinit var profileOutAdapter: ProfileOutAdapter
-    val datas = mutableListOf<ProfileOutAdapter.ProfileData>()
+    lateinit var entry: Entryview
+    val datas = mutableListOf<Entryview.ProfileData>()
     private fun initRecycler() {
-        profileOutAdapter = ProfileOutAdapter(this)
-        binding.rvProfile.adapter = profileOutAdapter
+        entry = Entryview(this)
+        binding.rvProfile.adapter = entry
+        var len=entry.datas.size
 
 
         datas.apply {
-            add(ProfileOutAdapter.ProfileData(name = "@suksuk0406", count = 5))
-            add(ProfileOutAdapter.ProfileData(name = "@doing.object", count = 6))
-            add(ProfileOutAdapter.ProfileData(name = "@kkamsoon", count = 2))
-            add(ProfileOutAdapter.ProfileData(name = "@sejong", count = 2))
-            add(ProfileOutAdapter.ProfileData(name = "@alom", count = 3))
-            add(ProfileOutAdapter.ProfileData(name = "@android", count = 5))
-
-            profileOutAdapter.datas = datas
-            profileOutAdapter.notifyDataSetChanged()
+            for( i in 0..len){
+                var myname=Entry.
+                add(Entryview.ProfileData(name = , num={}))
+            }
+            entry.datas = datas
+            entry.notifyDataSetChanged()
 
         }
     }

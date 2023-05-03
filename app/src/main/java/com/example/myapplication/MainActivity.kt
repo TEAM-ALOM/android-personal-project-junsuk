@@ -3,6 +3,7 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.adapter.Entry
 import com.example.myapplication.databinding.ActivityMainBinding
 
 
@@ -23,25 +24,22 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    lateinit var profileInAdapter: ProfileInAdapter
-    val datas = mutableListOf<ProfileInAdapter.ProfileData>()
+    lateinit var entry: Entry
+    val datas = mutableListOf<Entry.ProfileData>()
 
 
     private fun initRecycler() {
-        profileInAdapter = ProfileInAdapter(this)
-        binding.rvProfile.adapter = profileInAdapter
+        entry = Entry(this)
+        binding.rvProfile.adapter = entry
 
 
         datas.apply {
-            add(ProfileInAdapter.ProfileData(name = "@suksuk0406", count = 5))
-            add(ProfileInAdapter.ProfileData(name = "@doing.object", count = 6))
-            add(ProfileInAdapter.ProfileData(name = "@kkamsoon", count = 2))
-            add(ProfileInAdapter.ProfileData(name = "@sejong", count = 2))
-            add(ProfileInAdapter.ProfileData(name = "@alom", count = 3))
-            add(ProfileInAdapter.ProfileData(name = "@android", count = 5))
+            binding.plusID.setOnClickListener{
+                add(Entry.ProfileData(name = "", count = 0))
+                entry.notifyDataSetChanged()// 앱 화면 업데이트
+            }
+            entry.datas = datas
 
-            profileInAdapter.datas = datas
-            profileInAdapter.notifyDataSetChanged()
 
         }
     }

@@ -8,7 +8,9 @@ plugins {
 android {
     namespace 'com.example.myapplication'
     compileSdk 33
-
+    viewBinding {
+        enabled = true
+    }
     defaultConfig {
         applicationId "com.example.myapplication"
         minSdk 24
@@ -22,6 +24,7 @@ android {
     buildTypes {
         buildFeatures{
             viewBinding true
+            dataBinding true
         }
         release {
             minifyEnabled false
