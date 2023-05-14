@@ -2,8 +2,6 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapplication.adapter.Entry
-import com.example.myapplication.adapter.Entryview
 import com.example.myapplication.databinding.ActivityShowBinding
 
 class ShowActivity : AppCompatActivity() {
@@ -33,10 +31,6 @@ class ShowActivity : AppCompatActivity() {
 
 
         datas.apply {
-            for( i in 0..len){
-                var myname=Entry.
-                add(Entryview.ProfileData(name = , num={}))
-            }
             entry.datas = datas
             entry.notifyDataSetChanged()
 
