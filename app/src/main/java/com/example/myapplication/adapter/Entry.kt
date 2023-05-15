@@ -17,7 +17,7 @@ class Entry(private val datas : ArrayList<Person>): RecyclerView.Adapter<Entry.V
             binding.insertID.text = item.name
             binding.insertnum.text = item.count
         }
-    }//4587
+    }//45875594
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view=PersonBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return ViewHolder(view)
