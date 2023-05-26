@@ -2,7 +2,6 @@ package com.example.myapplication
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.adapter.Entry
 import com.example.myapplication.adapter.Person
 import com.example.myapplication.databinding.ActivityMainBinding
@@ -24,7 +23,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main){
                 add(Person(name = "", count = 0))// Entry 프로필 한명 추가
                 entry.notifyDataSetChanged()// 앱 화면 업데이트
             }
-            entry.datas = datas
+            entry.datas = datas as ArrayList<Person>
 
 
         }
