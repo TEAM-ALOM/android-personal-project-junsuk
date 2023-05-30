@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
+
     <include
-        layout="@layout/appbar"
-        />
+        android:id="@+id/include3"
+        layout="@layout/appbar" />
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -65,41 +66,42 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="68dp"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/prevbtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:background="#FFDC78"
+        android:backgroundTint="#FFDC78"
+        android:text="이전 화면"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/include3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0"
+        app:rippleColor="#FFDC78"
+        app:strokeColor="#FFDC78" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/endrecord"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_weight="1"
+        android:background="#FFDC78"
+        android:backgroundTint="#FFDC78"
+        android:text="녹화 종료"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/include3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/prevbtn"
-            android:layout_width="24dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:background="#FFDC78"
-            android:backgroundTint="#FFDC78"
-            android:text="이전 화면"
-            android:textSize="18sp"
-            app:rippleColor="#FFDC78"
-            app:strokeColor="#FFDC78" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/endrecord"
-            android:layout_width="24dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:background="#FFDC78"
-            android:backgroundTint="#FFDC78"
-            android:text="녹화 종료"
-            android:textSize="18dp" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
